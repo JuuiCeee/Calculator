@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
     fun onOperator(view: View){
         tvInput?.text?.let {
             if(lastNumeric && !isOperatorAdded(it.toString())){
-               tvInput?.append((view as Button).text)
+                tvInput?.append((view as Button).text)
                 lastNumeric = false
                 lastDot = false
             }
